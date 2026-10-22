@@ -1,0 +1,15 @@
+# Derleme çıktısı ve yayın dosyaları (exe'ler GitHub Release'lerinde yayınlanır)
+*.exe
+*.zip
+*.imza
+*.yeni
+*.part
+*.eski
+
+# Test görüntüleri
+araclar/test/goruntuler/
+
+# Anahtarlar: gizli anahtar depoya ASLA girmez
+gizli-anahtar*.xml
+*.pfx
+*.snk

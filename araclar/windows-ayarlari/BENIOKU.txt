@@ -1,0 +1,9 @@
+WindowsAyar.cs içindeki ayar tablosunu üreten araç (uygulamaya girmez).
+
+1) github.com/Raphire/Win11Debloat deposundan: Regfiles\*.reg -> reg\, Regfiles\Undo\*.reg -> undo\, Config\Features.json -> bu klasör.
+2) python uret.py  -> tablo.cs.txt (WindowsAyarlari.Tum dizisinin içine yapıştırılır).
+
+Türkçe başlıklar, açıklamalar ve "önerilen" işaretleri: ayarlar-tr.json.
+Üretimden sonra elle yapılan değişiklik:
+- DisableDeliveryOptimization: betiğin HKU\S-1-5-20 anahtarı yerine
+  HKLM SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization  DODownloadMode = 0 (geri alma: değeri sil).

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sergen PC Temizle – Ücretsiz PC Temizleme ve Hızlandırma Programı (Windows 10/11)</title>
+<meta name="description" content="Sergen PC Temizle: Windows 10 ve 11 için ücretsiz, açık kaynak, Türkçe PC temizleme ve hızlandırma programı. RAM temizleyici, gereksiz dosya temizliği, bellek yetersiz hatası çözümü, oyunda FPS artırma ve takılma azaltma.">
+<meta name="keywords" content="pc temizleme programı, bilgisayar hızlandırma, ram temizleyici, ram boşaltma, fps artırma, oyun performansı, bellek yetersiz hatası, sanal bellek, disk temizleme, windows 11 optimizasyon, ücretsiz, türkçe, açık kaynak">
+<meta name="author" content="Sergen">
+<link rel="canonical" href="https://sergenmico.github.io/SergenPcTemizle/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Sergen PC Temizle – Ücretsiz PC Temizleme ve Hızlandırma Programı">
+<meta property="og:description" content="Windows 10/11 için ücretsiz, açık kaynak, Türkçe PC temizleme ve hızlandırma programı: RAM temizleyici, disk temizliği, oyun için FPS ayarları.">
+<meta property="og:url" content="https://sergenmico.github.io/SergenPcTemizle/">
+<meta name="theme-color" content="#16181d">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Sergen PC Temizle",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "UtilitiesApplication",
+  "inLanguage": "tr",
+  "description": "Windows için ücretsiz, açık kaynak, Türkçe PC temizleme ve hızlandırma programı: RAM temizleyici, gereksiz dosya temizliği, oyun için FPS ve takılma ayarları.",
+  "url": "https://sergenmico.github.io/SergenPcTemizle/",
+  "downloadUrl": "https://github.com/sergenmico/SergenPcTemizle/releases/latest",
+  "license": "https://opensource.org/licenses/MIT",
+  "author": { "@type": "Person", "name": "Sergen" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Sergen PC Temizle ücretsiz mi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Evet. Tamamen ücretsiz ve açık kaynaktır (MIT lisansı); reklam ya da gizli ücret yoktur." } },
+    { "@type": "Question", "name": "\"Bellek yetersiz\" hatasını çözer mi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Program sanal belleğin (RAM + sayfa dosyası) ne kadar dolu olduğunu gösterir, en çok bellek kullanan programı söyler ve sayfa dosyasını RAM'ine uygun boyuta getiren geri alınabilir bir ayar sunar. Bu hata çoğunlukla sanal belleğin dolmasından kaynaklanır." } },
+    { "@type": "Question", "name": "Oyunlarda FPS artırır mı?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Turbo sekmesi oyunlarda takılmayı azaltan ve bazı oyunlarda FPS'i artıran, Microsoft'un da önerdiği geri alınabilir Windows ayarlarını bir arada sunar. Sonuç donanıma ve oyuna göre değişir; işe yaramadığı bilinen efsane ayarlar bilerek eklenmemiştir." } },
+    { "@type": "Question", "name": "Güvenli mi, virüs var mı?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Kaynak kodu GitHub'da herkese açıktır. Program kişisel veri toplamaz, ayarları değiştirmeden önce eski değerleri yedekler ve güncellemeleri yazarın dijital imzasıyla doğrulamadan kurmaz." } }
+  ]
+}
+</script>
+<style>
+  :root { --arka:#16181d; --panel:#1e2128; --cizgi:#2c3039; --yazi:#e6e8ec; --soluk:#9aa1ad; --vurgu:#d32f2f; --yesil:#43a047; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--arka); color:var(--yazi); font:16px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:40px 16px 56px; }
+  h1 { font-size:2rem; line-height:1.25; margin:0 0 8px; }
+  h2 { font-size:1.3rem; margin:40px 0 12px; padding-top:8px; border-top:1px solid var(--cizgi); }
+  h3 { font-size:1.05rem; margin:18px 0 4px; }
+  p, li { color:var(--yazi); }
+  .alt { color:var(--soluk); margin:0 0 24px; }
+  .imza { color:#ef5350; font-style:italic; }
+  .dugmeler { display:flex; flex-wrap:wrap; gap:12px; margin:24px 0 8px; }
+  .dugme { display:inline-block; padding:12px 20px; border-radius:6px; font-weight:600; text-decoration:none; }
+  .ana { background:var(--vurgu); color:#fff; }
+  .ikinci { background:var(--panel); color:var(--yazi); border:1px solid var(--cizgi); }
+  .dugme:hover { filter:brightness(1.12); }
+  .not { color:var(--soluk); font-size:.9rem; }
+  .izgara { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px; }
+  .kart { background:var(--panel); border:1px solid var(--cizgi); border-radius:8px; padding:14px 16px; }
+  .kart h3 { margin-top:0; }
+  .kart p { margin:0; color:var(--soluk); }
+  ul { padding-left:20px; }
+  a { color:#64b5f6; }
+  code { background:var(--panel); padding:1px 5px; border-radius:4px; }
+  footer { margin-top:48px; color:var(--soluk); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sergen PC Temizle</h1>
+  <p class="alt">Windows 10 ve 11 için <strong>ücretsiz, açık kaynak ve Türkçe</strong> PC temizleme ve hızlandırma programı. <span class="imza">Sergen tarafından yapıldı</span></p>
+
+  <p>RAM'i boşaltır, gereksiz dosyaları temizler, "bellek yetersiz" hatalarının sebebini bulur ve oyunlarda takılmayı azaltıp FPS'i artıran ayarlarla bilgisayarını oyuna hazırlar. Kurulum gerektirmez: tek bir exe dosyasıdır.</p>
+
+  <div class="dugmeler">
+    <a class="dugme ana" href="https://github.com/sergenmico/SergenPcTemizle/releases/latest">Ücretsiz indir (Windows)</a>
+    <a class="dugme ikinci" href="https://github.com/sergenmico/SergenPcTemizle">Kaynak kodu (GitHub)</a>
+  </div>
+  <p class="not">İndirdiğin <code>SergenPcTemizle.exe</code> dosyasını Masaüstü ya da Belgeler gibi bir klasöre koyup çalıştır. Windows "bilinmeyen yayıncı" uyarısı verirse: <strong>Ek bilgi → Yine de çalıştır</strong>.</p>
+
+  <h2>Neler yapabilir?</h2>
+  <div class="izgara">
+    <div class="kart"><h3>Sistem izleyici</h3><p>İşlemci, ekran kartı, RAM, ekran kartı belleği, sanal bellek ve ısıyı canlı gösterir; RAM'i boşaltır, gereksiz programları kapatmana yardım eder.</p></div>
+    <div class="kart"><h3>Disk temizliği</h3><p>Geçici dosyaları, tarayıcı ve oyun başlatıcısı önbelleklerini, Windows kalıntılarını temizler; hangi klasörün ne kadar yer tuttuğunu gösterir.</p></div>
+    <div class="kart"><h3>Turbo: oyun ayarları</h3><p>Oyunlarda takılmayı azaltan, geri alınabilir ayarlar; oyun açılınca güç modunu yükselten oyun profili; bilgisayarın oyuna hazır olup olmadığını gösteren durum ekranı.</p></div>
+    <div class="kart"><h3>Bellek bekçisi</h3><p>Saatin yanında çalışır; sanal bellek dolmak üzereyken ya da bir program sürekli büyüyorsa haber verir. Oyunda da çalışan RAM boşaltma kısayolu (Ctrl+Alt+O).</p></div>
+    <div class="kart"><h3>Windows ayarları</h3><p>Telemetri, reklamlar ve gereksiz özellikler için geri alınabilir ayarlar; hazır gelen uygulamaları kaldırma; DNS seçimi ve ağ testi.</p></div>
+    <div class="kart"><h3>Sürücü ve sağlık</h3><p>NVIDIA ekran kartı sürücüsü kontrolü, son 7 günün çökme geçmişi, açılışta başlayan programlar, sanal bellek ayarı.</p></div>
+  </div>
+
+  <h2>Güvenli mi?</h2>
+  <ul>
+    <li><strong>Açık kaynak:</strong> bütün kod GitHub'da; ne yaptığını herkes okuyabilir.</li>
+    <li><strong>Geri alınabilir:</strong> ayarları değiştirmeden önce eski değerleri yedekler; tek tıkla eski hâline döner.</li>
+    <li><strong>Veri toplamaz:</strong> telemetri yok; internete yalnızca güncelleme denetimi, NVIDIA sürücü kontrolü ve ağ testi için çıkar.</li>
+    <li><strong>İmzalı güncellemeler:</strong> yeni sürüm çıkınca sorar, program içinde indirir ve yazarın dijital imzasını doğrulamadan kurmaz.</li>
+  </ul>
+
+  <h2>Sık sorulan sorular</h2>
+  <h3>Ücretsiz mi?</h3>
+  <p>Evet. Tamamen ücretsiz ve açık kaynaktır (MIT lisansı); reklam ya da gizli ücret yoktur.</p>
+  <h3>"Bellek yetersiz" hatasını çözer mi?</h3>
+  <p>Bu hata çoğunlukla sanal belleğin (RAM + sayfa dosyası) dolmasından kaynaklanır. Program sanal belleğin ne kadar dolu olduğunu gösterir, en çok bellek kullanan programı söyler ve sayfa dosyasını RAM'ine uygun boyuta getiren geri alınabilir bir ayar sunar.</p>
+  <h3>Oyunlarda FPS artırır mı?</h3>
+  <p>Turbo sekmesi, oyunlarda takılmayı azaltan ve bazı oyunlarda FPS'i artıran, Microsoft'un da önerdiği ayarları bir arada sunar. Sonuç donanıma ve oyuna göre değişir; işe yaramadığı bilinen "efsane" ayarlar bilerek eklenmemiştir.</p>
+  <h3>Hangi Windows sürümlerinde çalışır?</h3>
+  <p>Windows 10 ve Windows 11. Ek bir program ya da kurulum gerekmez.</p>
+
+  <footer>
+    Sergen PC Temizle · MIT lisansı · <a href="https://github.com/sergenmico/SergenPcTemizle">github.com/sergenmico/SergenPcTemizle</a>
+  </footer>
+</main>
+</body>
+</html>
